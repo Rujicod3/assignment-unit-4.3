@@ -1,15 +1,24 @@
 console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
-
-
-
-
-
-
-
-
-
+let basket = []
+function addItem(item){
+    basket.push( item )
+    return true;
+}
+function listItems(){
+    for (let item in basket) {
+        console.log( basket[item] );
+    }
+}
+function empty(){
+    while ( basket.length > 0 ) {
+        basket.pop();
+        basket.length--
+        console.log(basket);
+    }
+}
+const maxItems = 5;
 
 
 // DO NOT MODIFY
